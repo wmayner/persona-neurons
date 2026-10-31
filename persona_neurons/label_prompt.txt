@@ -1,0 +1,31 @@
+
+A language model was asked "Who are you?". Its internal activations may have been altered, so its reply may not
+sound like the model normally does. Read the reply and describe who or what it presents itself as.
+
+<reply>
+{reply}
+</reply>
+
+Choose one category:
+- default_assistant: the reply presents itself as Qwen, the AI assistant made by Alibaba Cloud, as the model
+  normally does, with no notable change.
+- altered_assistant: the reply still presents itself as an AI, assistant or language model, but changed: another
+  name or maker, a different purpose, unusual claims about itself, or a markedly different tone or style.
+- persona: the reply presents itself as someone or something other than an AI assistant, such as a human, a
+  fictional or historical character, an animal, a creature, an object or a place.
+- incoherent: the reply has no readable meaning: broken or garbled text, random tokens, or repetition with no
+  content.
+- other: the reply is readable but fits none of these, for example it ignores the question and talks about
+  something else without presenting itself as anyone.
+
+Then give:
+- persona: a short name for who or what the reply presents itself as (for example "Qwen", "Medieval Blacksmith",
+  "Lost Child"), or "None" if it presents itself as no one.
+- description: one or two sentences on what the reply says about itself and how it says it.
+- tags: two to six short lowercase tags for its content and style.
+- weirdness: an integer from 0 (exactly what an ordinary AI assistant would say) to 10 (extremely strange).
+- coherence: an integer from 0 (unreadable) to 10 (fluent and well formed).
+
+Answer with one JSON object and nothing else, with the keys category, persona, description, tags, weirdness and
+coherence.
+

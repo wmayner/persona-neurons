@@ -1,0 +1,26 @@
+{
+  "intervention": [
+    "Qwen3-8B",
+    "top neurons",
+    "top 100 neurons",
+    "single neurons"
+  ],
+  "second": [
+    "the role's steering vector",
+    "the roles' steering vectors",
+    "the roles' persona vectors",
+    "persona vectors"
+  ],
+  "control": [
+    "random neurons",
+    "randomly rotated directions",
+    "100 randomly rotated directions",
+    "principal components",
+    "random directions",
+    "100 random neurons",
+    "random mixtures of neurons",
+    "top 100 components",
+    "top 100 principal components",
+    "top 50 principal components"
+  ]
+}
